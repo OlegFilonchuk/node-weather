@@ -1,5 +1,3 @@
-console.log('client side shit');
-
 const showResult = (content, isError = false) => {
   const div = document.createElement('div');
   div.textContent = content;
