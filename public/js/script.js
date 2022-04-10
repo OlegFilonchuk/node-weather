@@ -11,7 +11,7 @@ const showResult = (content, isError = false) => {
 const getData = async (address) => {
   const loader = showResult('Loading...', false);
   try {
-    const res = await fetch(`http://localhost:3001/weather?address=${address}`);
+    const res = await fetch(`/weather?address=${address}`);
     const json = await res.json();
 
     if (json.error) throw new Error(json.error.info);
